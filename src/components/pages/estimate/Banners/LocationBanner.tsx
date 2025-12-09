@@ -15,30 +15,21 @@ const LocationBanner = () => {
       flexDirection={{ xs: 'column-reverse', md: 'row' }}
       imgContent={
         <ImageBanner
-          src="/justinhavre-avm/calgary-banner.webp"
+          src="https://cdn.repliers.io/sample/IMG-ACT2954377_20.jpg?class=medium"
           alt="Calgary kitchen room banner"
         />
       }
       textContent={
-        <Stack
-          spacing={2}
-          pr={{
-            sm: 5
-          }}
-        >
+        <Stack spacing={2} pr={{ sm: 5 }}>
           <Typography variant="h2" color="common.white" lineHeight={1.2}>
-            {t('Estimates.locationBannerTitle', { city })}
+            {t('Estimates.locationBanner', { city })}
           </Typography>
-          <Typography variant="body1" color="common.white" lineHeight={1.4}>
-            Discover your {city} home&#39;s current market value with real-time
-            data and comprehensive market insights. Track {city} real estate
-            trends including average home prices, days on market, and active
-            inventory levels across all neighbourhoods. Whether you&#39;re
-            considering selling or simply want to understand what your home is
-            worth in today&#39;s market, our {city} home valuation tool provides
-            accurate estimates based on recent sales data and current market
-            conditions. Get instant access to {city} housing statistics and see
-            how your neighbourhood compares to the broader market.
+          <Typography
+            variant="body1"
+            color="common.white"
+            sx={{ lineHeight: 1.4, whiteSpace: 'pre-line' }}
+          >
+            {t('Estimates.locationDescription', { city })}
           </Typography>
         </Stack>
       }

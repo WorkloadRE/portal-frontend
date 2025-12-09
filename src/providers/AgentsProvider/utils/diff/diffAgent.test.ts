@@ -1,3 +1,5 @@
+import { defaultBrokerageName } from '@configs/estimate'
+
 import type {
   ApiAgentsCreateParams,
   ApiRplAgent,
@@ -9,29 +11,29 @@ import diffAgent from './diffAgent'
 describe('diffAgent', () => {
   it('should return an empty array if there are no differences', () => {
     const agentMappedFields: ApiAgentsCreateParams = {
-      externalId: '11',
-      fname: 'Terence',
-      lname: 'Law',
+      externalId: '1',
+      fname: 'John',
+      lname: 'Dow',
       phone: '',
-      email: 'terence@justinhavre.com',
-      brokerage: 'Justin Havre Real Estate Team eXp Realty',
+      email: 'john@email.com',
+      brokerage: defaultBrokerageName,
       designation: 'Broker',
       status: true
     }
 
     const agent: ApiRplAgent = {
-      externalId: '11',
-      fname: 'Terence',
-      lname: 'Law',
-      phone: '14036506311',
-      email: 'terence@justinhavre.com',
-      brokerage: 'Justin Havre Real Estate Team eXp Realty',
+      externalId: '1',
+      fname: 'John',
+      lname: 'Dow',
+      phone: '155587654321',
+      email: 'john@email.com',
+      brokerage: defaultBrokerageName,
       designation: 'Broker',
       status: true,
       // this fields will be ignored
-      agentId: 106685,
-      proxyPhone: '15873179104',
-      proxyEmail: '4dwhoj5k4ma2trmjp@mail.dev-justinhavre-avm.condosportal.ca',
+      agentId: 12345,
+      proxyPhone: '155512345678',
+      proxyEmail: 'proxy@email.com',
       avatar: null,
       data: {
         syncDate: '2025-04-29T14:11:30.420Z'

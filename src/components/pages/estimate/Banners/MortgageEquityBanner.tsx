@@ -73,7 +73,7 @@ const MortgageEquityBanner: React.FC<Props> = ({ blurred = false }) => {
               layout="fill"
               objectFit="cover"
               objectPosition="left center"
-              src="/justinhavre-avm/estimate-equity-banner.webp"
+              src="https://cdn.repliers.io/sample/IMG-CAR4215250_24.jpg?class=medium"
               alt="Kitchen home banner picture"
             />
           </Box>

@@ -13,7 +13,6 @@ import {
 } from '@configs/filter-types'
 import searchConfig from '@configs/search'
 
-// justinhavre-avm temporary enable add estimate button
 export const enableClientsAddEstimate = false
 export const addStreetSuffix = false
 

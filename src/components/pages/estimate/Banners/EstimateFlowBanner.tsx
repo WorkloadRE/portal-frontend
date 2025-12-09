@@ -13,7 +13,7 @@ const EstimateFlowBanner = () => {
       <ImageBanner
         showOverlay
         boxProps={{ zIndex: 0 }} // show banner behind text content
-        src="/justinhavre-avm/estimate-flow-banner.webp"
+        src="https://cdn.repliers.io/sample/IMG-CAR4215250_24.jpg?class=medium"
         alt="Banner"
       />
 

@@ -1,18 +1,20 @@
 'use client'
 
 import { useEffect, useState } from 'react'
+import React from 'react'
 import Image from 'next/image'
 import { useSearchParams } from 'next/navigation'
-import type React from 'react'
 
 import { Box, GlobalStyles, Stack, Typography } from '@mui/material'
 import { debounce } from '@mui/material/utils'
 
+import contentConfig from '@configs/content'
 import { AddressSection } from '@pages/estimate/EstimateFormSteps/sections'
 
 import useResponsiveValue from 'hooks/useResponsiveValue'
 
 const resizeDebouneDelay = 100
+const { siteName, siteFooterLogo } = contentConfig
 
 const Step0Embedded = ({
   onSubmit
@@ -59,8 +61,7 @@ const Step0Embedded = ({
         window.resizeTo(targetOuterWidth, targetOuterHeight)
         // After a successful resize, the 'resize' event listener in the useEffect
         // should update the `showMap` state, which in turn allows AddressSection to show the map.
-        // eslint-disable-next-line @typescript-eslint/no-unused-vars
-      } catch (error) {
+      } catch {
         // Optionally, you could inform the user to manually resize the window.
       }
     }
@@ -75,8 +76,8 @@ const Step0Embedded = ({
               width={78}
               height={54}
               unoptimized
-              src="/JUSTIN-logo.svg"
-              alt="JUSTIN HAVRE real estate team"
+              src={siteFooterLogo.url}
+              alt={siteName}
             />
           )}
           <Stack spacing={1.25}>

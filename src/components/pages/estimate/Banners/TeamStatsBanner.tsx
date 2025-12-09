@@ -122,7 +122,7 @@ const TeamStatsBanner = () => {
               layout="fill"
               objectFit="cover"
               objectPosition="left center"
-              src="/justinhavre-avm/team-stats-banner.webp"
+              src="https://cdn.repliers.io/sample/IMG-ACT6299053_13.jpg?class=medium"
               alt="City banner picture"
             />
           </Box>

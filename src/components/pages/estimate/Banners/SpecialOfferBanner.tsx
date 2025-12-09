@@ -46,7 +46,7 @@ const SpecialOfferBanner = () => {
         flexDirection={{ xs: 'column-reverse', md: 'row' }}
         imgContent={
           <ImageBanner
-            src="/justinhavre-avm/home-special-offer.webp"
+            src="/home-keys.jpg"
             alt="Key and house home special offer picture"
           />
         }
