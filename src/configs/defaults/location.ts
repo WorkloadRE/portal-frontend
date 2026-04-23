@@ -1,11 +1,18 @@
 const location = {
-  stateCode: 'NC',
-  state: 'North Carolina',
-  city: 'Charlotte',
-  // HOME PAGE STATS
+  stateCode: 'TX',
+  state: 'Texas',
+  city: 'Spring',
+  // HOME PAGE STATS — filter scope for headline numbers on the home page
   defaultFilters: {},
-  // DASHBOARD LIST
-  defaultCities: ['Kansas City', 'Nashville', 'Charlotte', 'Denver', 'Austin']
+  // DASHBOARD LIST — neighborhoods featured on the home page dashboard
+  defaultCities: [
+    'Spring',
+    'The Woodlands',
+    'Tomball',
+    'Cypress',
+    'Conroe',
+    'Houston'
+  ]
 }
 
 export default location

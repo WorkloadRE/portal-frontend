@@ -7,8 +7,10 @@ const accessToken = process.env.NEXT_PUBLIC_MAPBOX_KEY || ''
 const config = {
   // Mapbox access token and default options
   mapboxDefaults: {
-    zoom: 4,
-    minZoom: 4,
+    // Spring, TX — Bruno Fine Properties home base (77379 centroid)
+    center: [-95.4172, 30.0799] as [number, number],
+    zoom: 10,
+    minZoom: 8,
     maxZoom: 18,
     dragRotate: false,
     doubleClickZoom: true,
@@ -27,15 +29,16 @@ const config = {
   fallbackAreaZoom: 11,
   defaultAddressZoom: 15,
   propertyPageAddressZoom: 18,
-  // Default polygon to limit searches and Repliers API requests (!)
+  // Default polygon — Greater Houston MSA (HAR board 147 coverage area)
+  // Bounding box from ~Galveston (south) to ~Conroe (north), ~Katy (west) to ~Baytown (east)
   defaultPolygon: [
-    { lat: 50.0, lng: -130.0 },
-    { lat: 50.0, lng: -65.0 },
-    { lat: 23.5, lng: -65.0 },
-    { lat: 23.5, lng: -130.0 }
+    { lat: 30.55, lng: -96.0 },
+    { lat: 30.55, lng: -94.8 },
+    { lat: 29.1, lng: -94.8 },
+    { lat: 29.1, lng: -96.0 }
   ] as ApiLocation[],
-  // proximity search
-  proximitySearchCenter: { lat: 37.0, lng: -98.5 } as ApiLocation,
+  // proximity search — biases autosuggest toward north Houston / Spring
+  proximitySearchCenter: { lat: 30.0799, lng: -95.4172 } as ApiLocation,
   proximitySearchLanguage: 'en',
   proximitySearchCountry: 'US',
   proximitySearchLimit: 10

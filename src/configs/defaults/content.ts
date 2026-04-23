@@ -8,66 +8,83 @@ const content = {
   siteFooterLogo: { url: '/logo-footer.svg', width: 80, height: 100 },
   siteSplashscreen: '/splashscreen.webp',
   loginSplashscreen: '/splashscreen.webp',
-  siteName: 'DEFAULTNAME',
-  siteDefaultBrokerageName: 'DEFAULT BROKERAGE NAME',
-  siteKeywords: ['DEFAULTKEY1', 'DEFAULTKEY2'],
+  siteName: 'Bruno Fine Properties',
+  siteDefaultBrokerageName: 'Bruno Fine Properties',
+  siteKeywords: [
+    'Spring TX homes',
+    'Houston real estate',
+    'Bruno Fine Properties',
+    'Spring Texas homes for sale',
+    'Houston luxury real estate',
+    'The Woodlands homes',
+    'foreclosure specialist Houston'
+  ],
   siteDescription:
-    'DEFAULTNAME lorem ipsum dolor sit amet, consectetur adipiscing elit DEFAULTSTATE.',
+    'Bruno Fine Properties helps families find the right home in Spring, The Woodlands, and Greater Houston. Search every HAR listing with expert guidance from a distressed-property specialist.',
   siteFooterDescription:
-    'Our mission is to make the MLS more valuable while remaining committed to the needs of local markets. We do this by delivering exceptional customer service and striving for continuous innovation.',
+    'Bruno Fine Properties is a boutique Houston-area brokerage specializing in Spring, The Woodlands, and the north Houston MSA. We pair every client with a licensed agent who knows the neighborhoods, the schools, and the deal.',
   siteFullscreenFooter: '',
   homepageHeroBlock: {
-    title: 'DEFAULTNAME',
+    title: 'Find Your Perfect Home in Spring, Texas',
     subTitle:
-      'DEFAULTNAME serves over XX,XXX real estate professionals in DEFAULTSTATE. As a top-rated multiple listing service (MLS), we provide property information and innovative products.'
+      'Every HAR listing. Real-time data. An agent who knows the north Houston market inside and out. Start your search with Bruno Fine Properties.'
   },
 
   siteMetadata: {
     title: {
-      template: 'DEFAULTNAME > %s',
-      default: 'DEFAULTNAME' // fallback
+      template: 'Bruno Fine Properties | %s',
+      default: 'Bruno Fine Properties — Spring, TX & Greater Houston Homes for Sale'
     },
-    // metadataBase: new URL('https://smartmls.com/'), // canonical URL
+    metadataBase: new URL('https://search.brunofineproperties.com/'),
     alternates: {
       canonical: '/'
     },
     generator: 'Next.js',
-    applicationName: 'DEFAULTNAME',
+    applicationName: 'Bruno Fine Properties',
     referrer: 'origin-when-cross-origin',
-    keywords: ['DEFAULTKEY1', 'DEFAULTKEY2'],
-    // authors: [{ name: 'John' }, { name: 'Jane' }],
-    creator: 'John Doe',
-    publisher: 'John Doe',
-    // formatDetection: {
-    //   email: false,
-    //   address: false,
-    //   telephone: false
-    // },
+    keywords: [
+      'Spring TX homes',
+      'Houston real estate',
+      'Bruno Fine Properties',
+      'Spring Texas homes for sale',
+      'Houston luxury real estate',
+      'The Woodlands homes'
+    ],
+    creator: 'Marcus Bruno',
+    publisher: 'Bruno Fine Properties',
     description:
-      'DEFAULTNAME lorem ipsum dolor sit amet, consectetur adipiscing elit DEFAULTSTATE.',
+      'Search every HAR-listed home in Spring, TX, The Woodlands, and Greater Houston. Real-time data, expert local guidance, and a distressed-property specialist on your side.',
     icons: {
       icon: '/favicon.ico'
     }
   } as Metadata,
   estimateMetadata: {
-    title:
-      'DEFAULTNAME lorem ipsum dolor sit amet, consectetur adipiscing elit DEFAULTSTATE.',
+    title: 'Free Home Valuation | Bruno Fine Properties',
     description:
-      'DEFAULTNAME lorem ipsum dolor sit amet, consectetur adipiscing elit DEFAULTSTATE.'
+      'Get an AI-powered valuation of your Spring, TX or Greater Houston home — with neighborhood trends, comps, and market data from Bruno Fine Properties.'
   } as Metadata,
   estimateResultMetadata: {
-    title: '$ Property Valuation Report',
+    title: '$ Home Valuation Report | Bruno Fine Properties',
     description:
-      'View your comprehensive $ home valuation from HomeIQ. AI-powered insights, neighbourhood trends, and market data for informed decisions.'
+      'Your comprehensive $ home valuation from Bruno Fine Properties. AI-powered insights, neighborhood trends, and Houston market data to help you make informed decisions.'
   } as Metadata,
   missingPropertyMetadata: {
-    title: "Listing you are looking for isn't there.",
-    description: "Listing you are looking for isn't there."
+    title: "This listing isn't available right now.",
+    description:
+      'The listing you are looking for is no longer active or has been removed from HAR. Browse active listings at Bruno Fine Properties.'
   } as Metadata,
   restrictedPropertyTitle:
-    'This listing is only visible to registered users due to MLS compliance.',
-  estimateBoardRegulations: '',
-  toolbarMenuItems: [] as ToolbarConfig[]
+    'This listing is only visible to registered users due to HAR/MLS compliance. Sign up in seconds to view full details.',
+  estimateBoardRegulations:
+    'Data courtesy of the Houston Association of REALTORS® (HAR). Information is deemed reliable but not guaranteed.',
+  toolbarMenuItems: [
+    { label: 'Listings', url: '/properties' },
+    { label: 'Neighborhoods', url: '/neighborhoods' },
+    { label: 'Blog', url: 'https://brunofineproperties.com/blog' },
+    { label: 'About', url: 'https://brunofineproperties.com/about' },
+    { label: '(281) 771-1670', url: 'tel:+12817711670' },
+    { label: 'Free Consultation', url: 'https://brunofineproperties.com/contact' }
+  ] as ToolbarConfig[]
 }
 
 export default content
