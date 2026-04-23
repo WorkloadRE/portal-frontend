@@ -18,6 +18,8 @@ import Providers from './_providers'
 
 const gbInitMode = process.env.NEXT_PUBLIC_GROWTHBOOK_INIT || 'ssg'
 
+export const dynamic = 'force-dynamic'
+  
 export const metadata: Metadata = content.siteMetadata
 
 export const viewport: Viewport = {
